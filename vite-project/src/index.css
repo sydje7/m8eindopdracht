@@ -1,0 +1,126 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #282c34;
+  color: #000;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.navbar {
+  width: 100%;
+  background-color: #282c34;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #444;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(255, 67, 67);
+}
+
+
+.profile-card {
+  display: flex;
+  background-color: #eee;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+  width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  gap: 20px;
+}
+
+.profile-img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.profile-text h2 {
+  margin-top: 0;
+}
+
+.profile-text p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Top 10 Stadionlijst */
+.top10-card {
+  background-color: #eee;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+  width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.top10-card h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-rank {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+  width: 30px;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-details strong {
+  font-size: 18px;
+}
+
+.book-details small {
+  color: #555;
+  font-size: 14px;
+}
