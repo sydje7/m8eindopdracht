@@ -1,4 +1,4 @@
-import "../index.css";
+import "./home.css";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
   useEffect(() => {
     const url = `https://picsum.photos/300/200?random=${Math.random()}`;
     setRandomImage(url);
-  }, []); // lege dependency array betekent: dit gebeurt 1x bij mount
+  }, []); // 
 
   const stadions = [
     { name: "Santiago Bernabéu", club: "Real Madrid (Spanje)" },
@@ -42,11 +42,11 @@ export default function Home() {
 
       <section className="top10-card">
         <h2>Top 10 Mooiste Voetbalstadions</h2>
-        <ol className="book-list">
+        <ol className="football-list">
           {stadions.map((stadion, index) => (
-            <li key={index} className="book-item">
-              <div className="book-rank">{index + 1}</div>
-              <div className="book-details">
+            <li key={index} className="football-item">
+              <div className="football-rank">{index + 1}</div>
+              <div className="football-details">
                 <strong>{stadion.name}</strong>
                 <small>{stadion.club}</small>
               </div>
